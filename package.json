@@ -1,0 +1,27 @@
+{
+  "name": "freenow-assessment",
+  "version": "1.0.0",
+  "description": "A Cypress Automation Test Framework with Cucumber to test the [Wikipedia](https://www.wikipedia.org/) search feature.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbineshBabu/freenow-assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbineshBabu/freenow-assessment/issues"
+  },
+  "homepage": "https://github.com/AbineshBabu/freenow-assessment#readme",
+  "dependencies": {
+    "cypress": "^9.5.3",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
