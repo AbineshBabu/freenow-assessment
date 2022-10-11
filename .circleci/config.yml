@@ -8,4 +8,4 @@ workflows:
           post-steps:
             - run: npm run posttest
             - store_test_results:
-                path: cypress/report
+                path: cypress/report/index.html
