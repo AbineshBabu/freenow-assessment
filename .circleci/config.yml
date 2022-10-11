@@ -5,4 +5,7 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          yarn: true
+      - npm run posttest
+          post-steps:
+            - store_artifacts:
+                path: cypress/report
