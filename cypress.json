@@ -2,5 +2,6 @@
     "baseUrl": "https://www.wikipedia.org",
     "testFiles": "**/*.feature",
     "watchForFileChanges":false,
-    "videoCompression": false
+    "videoCompression": false,
+    "retries": 1
 }
