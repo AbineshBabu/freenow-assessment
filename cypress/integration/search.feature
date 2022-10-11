@@ -4,7 +4,7 @@ Feature: To verify the Wikipedia's search page
         Given user opens the Wikipedia's page
         When user chooses the language
             |language|
-            |EN|
+            |English|
         And user types the search keyword
             |searchKeyword|
             |Apollo 11|
