@@ -8,7 +8,7 @@ const search = new Search();
 const searchResult = new SearchResult();
 
 Given("user opens the Wikipedia's page", () => {
-    cy.visit('/');
+    cy.visitHomePage();
 })
 
 When('user chooses the language', (datatable) => {
