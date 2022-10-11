@@ -6,6 +6,3 @@ workflows:
     jobs:
       - cypress/run
       - npm run posttest
-          post-steps:
-            - store_artifacts:
-                path: cypress/report
