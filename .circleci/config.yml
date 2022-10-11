@@ -7,5 +7,5 @@ workflows:
       - cypress/run:
           post-steps:
             - run: npm run posttest
-            - store_test_results:
-                path: cypress/report/index.html
+            - store_artifacts:
+                path: cypress/report
