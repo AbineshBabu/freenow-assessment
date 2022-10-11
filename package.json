@@ -4,7 +4,8 @@
   "description": "A Cypress Automation Test Framework with Cucumber to test the [Wikipedia](https://www.wikipedia.org/) search feature.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --spec cypress/integration/search.feature",
+    "posttest": "cd cypress && node report.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,15 @@
   "homepage": "https://github.com/AbineshBabu/freenow-assessment#readme",
   "dependencies": {
     "cypress": "^9.5.3",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^1.20.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json"
+    }
   }
 }
