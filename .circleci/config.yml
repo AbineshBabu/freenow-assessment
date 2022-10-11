@@ -7,13 +7,5 @@ workflows:
       - cypress/run:
           post-steps:
             - run: npm run posttest
-            steps:
-            - run:
-                name: Creating Dummy Artifacts
-                command: |
-                  echo "my artifact file" > cypress/report;
-                  mkdir /tmp/artifacts;
-                  echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
             - store_artifacts:
-                path: cypress/report/
-                destination: artifact-file
+                path: cypress/report
