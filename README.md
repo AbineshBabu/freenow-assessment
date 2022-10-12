@@ -1,4 +1,4 @@
-# freenow-assessment
+# Freenow-assessment
 
 A Cypress Test Automation Framework with Cucumber to test the [Wikipedia](https://www.wikipedia.org/)'s search feature.
 
@@ -45,6 +45,15 @@ A Cypress Test Automation Framework with Cucumber to test the [Wikipedia](https:
  - `npm run test` - To execute all the test cases of the search feature developed in Cucumber.
 
  ### Test report
-   - Test report in HTML will be generated automatically post the 'npm run test' command execution.
+   - Test report (index.html) will be generated automatically post the 'npm run test' command execution.
    - `npm run posttest` - To manually generate the Test report.
-   - Test Report will be generated inside the following folder `cypress/report`.
+   - Test Report will be generated inside the following folder `cypress/report/`.
+
+
+## CircleCI integration
+
+  ### Folder structure
+ - `.circleci` - To maintain CircleCI configuration stored in `config.yml`.
+
+  ### CircleCI pipeline link
+ - https://app.circleci.com/pipelines/github/AbineshBabu/freenow-assessment?branch=main
